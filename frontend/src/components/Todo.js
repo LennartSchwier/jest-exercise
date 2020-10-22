@@ -19,7 +19,7 @@ export default function Todo({ id, status, description, onAdvance, showButtons=t
                         Advance
                     </button>
                 )}
-                <button onClick={() => history.push(`/delete/${id}`)}>Delete</button>
+                <button title={"deleteButton"} onClick={() => history.push(`/delete/${id}`)}>Delete</button>
             </ButtonGroup>}
         </StyledTodo>
     );
